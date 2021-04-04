@@ -40,10 +40,10 @@ namespace MyApp
             {
                 sqlConn.Open();
 
-                String queryString = "SELECT COUNT(1) FROM dbo.tblUser WHERE UserName = @UserName AND Password = @Password";
+                String queryString = "SELECT COUNT(1) FROM dbo.tblUser WHERE Username = @Username AND Password = @Password";
                 SqlCommand command = new SqlCommand(queryString, sqlConn);
                 command.CommandType = System.Data.CommandType.Text;
-                command.Parameters.AddWithValue("@UserName", txtUsername.Text);
+                command.Parameters.AddWithValue("@Username", txtUsername.Text);
                 command.Parameters.AddWithValue("@Password", txtPassword.Text);
                 int count = (Int32)command.ExecuteScalar();
                 if(count == 1)

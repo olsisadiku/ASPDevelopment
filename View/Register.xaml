@@ -9,7 +9,50 @@
         <Window.Background>
             <ImageBrush ImageSource="C:/Users/olsi_/Desktop/Search Engine/MyApp/imgs/login-background.jpg"/>
         </Window.Background>
-    <Grid>
-        
-    </Grid>
+    <StackPanel VerticalAlignment="Top" HorizontalAlignment="Center" Orientation="Vertical" Margin="296,59,296,0">
+        <StackPanel.Resources>
+            <Style TargetType="{x:Type TextBox}">
+                <Setter Property="Margin" Value="0,10,0,0"/>
+            </Style>
+        </StackPanel.Resources>
+        <TextBox Background="Transparent" HorizontalAlignment="Center" FontSize="30" Margin="0,30,0,0" BorderBrush="Transparent">Register</TextBox>
+        <Label>
+            <Label.Content>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0,10,5,0">Name:</TextBlock>
+                    <TextBox Width="150" Height="20" Name="txtName"></TextBox>
+                </StackPanel>
+            </Label.Content>
+        </Label>
+
+        <Label>
+            <Label.Content>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0,10,5,0">Email:</TextBlock>
+                    <TextBox Width="150" Height="20" Name="txtEmail"></TextBox>
+                </StackPanel>
+            </Label.Content>
+        </Label>
+
+        <Label Margin="-24,0,0,0">
+            <Label.Content>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0,10,5,0">Username:</TextBlock>
+                    <TextBox Width="150" Height="20" Name="txtUsername"></TextBox>
+                </StackPanel>
+            </Label.Content>
+        </Label>
+
+        <Label Margin="-22,0,0,0">
+            <Label.Content>
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="0,10,5,0">Password:</TextBlock>
+                    <TextBox Width="150" Height="20" Name="txtPassword"></TextBox>
+                </StackPanel>
+            </Label.Content>
+        </Label>
+
+        <Button Width="60" Click="Button_Click_1">Register</Button>
+
+    </StackPanel>
 </Window>
